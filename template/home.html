@@ -1,0 +1,217 @@
+{%load static%}
+
+<!DOCTYPE html>
+<!-- saved from url=(0021)http://bhiwandi.xyz/# -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Nashik Corona Updates Live</title>
+<meta http-equiv="refresh" content="05" />
+<meta name="description" content="Nashik + India Updates">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+<meta property="og:title" content="Nashik Corona Tracker" />
+<meta property="og:description" content="Nashik Corona Tracker" />
+<meta property="og:url" content="/" />
+<meta property="og:image" content="{% static '/images.jpg' %}" />
+
+
+<link rel="stylesheet" href="{% static 'style_new.css'%}">
+<link rel="stylesheet" href="{% static 'nav.css'%}">
+<link rel="stylesheet" href="{% static 'css'%}">
+
+
+
+
+
+  <!----End Calender -------->
+  <style>
+  .table {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 0px;
+    color: white;
+    
+}
+th,td {
+    height: 40px;
+}
+
+table {
+    border-spacing: 10;
+    border-collapse: collapse;
+    box-sizing: border-box;
+}
+table {
+    display: table;
+    border-collapse: collapse;
+    border-spacing: 10px;
+    border-color: grey;
+    box-sizing: border-box;
+}
+.footer {
+    background: #FFAD8B;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 50px;
+} 
+  </style>
+  		              <!-- Global site tag (gtag.js) - Google Analytics -->
+
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-168506165-1');
+</script>
+
+</head>
+<body data-gr-c-s-loaded="true" cz-shortcut-listen="true">
+    		
+<center><img src="{% static '/images.jpg' %}" height="98px" width="400px"></center>	       
+	    <div class="wrap">	 
+	     				     
+	</div>
+		   <div class="main">  
+	    <div class="wrap">  		 
+	       <div class="column_left">
+	      
+	         <div class="tweets">
+		               <h3>Nashik</h3>		              
+						<div class="menu_box_list">
+	    		 	       	<ul>
+						  	{%if confirmed%}
+						  	<li><a href="/" class=""><span>Total Confirmed</span><label class="digits">{{confirmed}} </label><div class="clear"></div></a></li>
+						  	{%endif%}
+						  	{%if con%}
+						  	<li><a href="/" class=""><span>Confirmed 24hr</span><label class="digits">{{con}} </label><div class="clear"></div></a></li>
+						  	{%endif%}
+						  	{%if recovered%}
+						  	<li><a href="/" class=""><span>Recovered</span><label class="digits">{{recovered}} </label><div class="clear"></div></a></li>
+						  	{%endif%}
+
+						  	{%if death%}
+						  	<li><a href="/" class=""><span>Death</span><label class="digits">{{death}} </label><div class="clear"></div></a></li>
+						  	{%endif%}
+						  			  	
+				    		</ul>
+				      	
+				      </div>
+		          </div><br>
+	     
+
+
+
+
+	       	          
+	    		  <div class="menu_box">
+	    		     
+	    		     <!-- <center><img src="images/live.gif" height="30" width="80"></center><br>
+	    		 	 <h3>Bhiwandi (City+Rural) Corona Cases</h3>
+	    		 	   <div class="menu_box_list">
+	    		 	       	<ul>
+						  		
+						  	<li><a href="http://bhiwandi.xyz/#" class=""><span>Total Confirmed</span><label class="digits">347 </label><div class="clear"></div></a></li>
+						  	<li><a href="http://bhiwandi.xyz/#" class=""><span>Active</span><label class="digits">178 </label><div class="clear"></div></a></li>
+						  	<li><a href="http://bhiwandi.xyz/#" class=""><span>Recovered</span><label class="digits">155 </label><div class="clear"></div></a></li>
+						  	<li><a href="http://bhiwandi.xyz/#" class=""><span>Death</span><label class="digits">14 </label><div class="clear"></div></a></li>
+						  			  	
+				    		</ul>
+				      	
+				      </div> -->
+	    		 </div>
+	    		 </div>
+	    		 
+	    		 
+	    		 <div class="column_middle">
+	    		     
+	    		<div class="menu_box">
+	    		   
+	    		 	 <h3>Maharashtra</h3>
+	    		 	   <div class="menu_box_list">
+				      		<ul>
+						  			{%if total%}
+						  			<li><a href="/" class=""><span>Total Confirmed</span><label class="digits">{{total}} </label><div class="clear"></div></a></li>
+						  			{%endif%}
+						  			{%if sick%}
+						  		    <li><a href="/" class=""><span>sick</span><label class="digits">{{sick}} </label><div class="clear"></div></a></li>
+						  		    {%endif%}
+						  		    {%if total_recovered%}
+						  		     <li><a href="/" class=""><span>Recovered</span><label class="digits">{{total_recovered}} </label><div class="clear"></div></a></li>
+						  		    {%endif%}
+						  		    {%if dead%}
+						  		      <li><a href="/" class=""><span>Death</span><label class="digits">{{dead}} </label><div class="clear"></div></a></li>
+						  		    {%endif%}
+						  	
+						  					  	
+				    		</ul>
+				      	
+				      </div>
+	    		 </div>
+	    		
+	    		
+	    	
+		        
+		       </div>
+		       
+		       
+		       
+		       <div class="column_right">
+            	<div class="column_middle_grid1">	
+								          <div class="menu_box">
+	    		 	 <h3>India</h3>
+	    		 	   <div class="menu_box_list">
+				      			<ul>
+				      				{%if total_c%}
+						  			<li><a href="/" class=""><span>Total Confirmed</span><label class="digits">{{total_c}} </label><div class="clear"></div></a></li>
+						  			{%endif%}
+						  			{%if sicks%}
+						  		    <li><a href="/" class=""><span>Active</span><label class="digits">{{sicks}} </label><div class="clear"></div></a></li>
+						  		    {%endif%}
+						  		    {%if total_r%}
+						  		     <li><a href="/" class=""><span>Recovered</span><label class="digits">{{total_r}} </label><div class="clear"></div></a></li>
+						  		     {%endif%}
+
+						  		     {%if total_death%}
+						  		      <li><a href="/" class=""><span>Death</span><label class="digits">{{total_death}} </label><div class="clear"></div></a></li>
+
+						  		      {%endif%}
+						  	
+						  					  	
+				    		</ul>
+
+				      </div>
+	    		 </div>
+	    		 
+	    		       
+			          </div>
+			          <br>
+			          
+			          
+			          
+			          
+			          
+	    		 
+	    		 <!--<br><br>
+	    		  <div class="menu_box">
+	    		       <h3><font color="white">Visitors: 8116</font></h3><br>
+	    		      <h3><font color="white">Statistics By: <b>Ashish Rajbhar (Speed News Bharat)</b><br> Website Managed By: <b>BhiwandiCity</b></font></h3><br>
+			          
+			          </div>-->
+			          
+			          
+			          <br><br><br><br><br>
+		        <div class="footer">
+		            <center>
+		                <a href="https://web.whatsapp.com/send?text=/"><img src="{% static '/whatsapp.png' %}"  ></a>Share With Friends
+		               
+		                 
+		                </center>
+		                </div>
+		                
+
+
+		  
+</div></div></div><iframe src="#" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation" style="display: none;"></iframe><iframe src="./Bhiwandi Corona Updates Live_files/webPushAnalytics.html" style="display: none;"></iframe></body></html>
